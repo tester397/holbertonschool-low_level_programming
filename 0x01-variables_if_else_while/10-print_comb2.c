@@ -1,9 +1,11 @@
 #include <stdio.h>
+
 /**
 * main - Entry point
 * 00 .. 99 with putchar and commas!!!!
 * Return: Always 0 (Success)
 */
+
 int main(void)
 {
 int n;
