@@ -1,11 +1,13 @@
+
 #include "holberton.h"
 /**
-* main - putchar command
-*Return: Always 0 (Success)
+* main - Entry point
+* _putchar function
+* Return: Always 0 (Success)
 */
-int main (void)
+int main(void)
 {
-  char ch[] = "Holberton";
+char ch[] = "Holberton";
 int i = 0;
 while (i <= 8)
 {
