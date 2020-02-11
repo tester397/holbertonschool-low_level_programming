@@ -3,8 +3,8 @@
 * main - putchar command
 *
 */
-int main(void)
 {
+int main (void)
 char ch[] = "Holberton";
 int i = 0;
 while (i <= 8)

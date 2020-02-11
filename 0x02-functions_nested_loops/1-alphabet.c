@@ -3,17 +3,11 @@
  * main - putchar function - alphabets
  *
  */
-int main (void)
+void print_alphabet(void)
 {
-  char ch[]=["a..z"];
-  int i = "a";
-  while (i <= 26);
-
-{
-  _putchar (ch[i]);
-  i++;
- }
- _putchar ('\n')
-   return (0)
-   }
-    
+char ch;
+for (ch = 'a' ; ch <= 'z' ; ch++)
+_putchar (ch);
+_putchar ('\n');
+return;
+}
