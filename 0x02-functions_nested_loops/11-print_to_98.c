@@ -1,31 +1,28 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
-* print_to_98 - check the code for Holberton School students.
-* @n : variable
-* Return: Always 0.
-*/
-void print_to_98(int n)
+ * print_to_98 - function natural
+ * @a: print to 98
+ * Return: n
+ */
+void print_to_98(int a)
 {
 int i;
-if (n < 98)
+
+if (a < 98)
 {
-for (i = n; i <= 98; i++)
-{
-printf("%d", i);
+for (i = a; i <= 98; i++)
 if (i != 98)
-printf(", ");
-}
-printf("\n");
+printf("%i, ", i);
+else
+printf("%i\a", i);
 }
 else
 {
-for (i = n; i >= 98; i--)
-{
-printf("%d", i);
+for (i = a; i >= 98; i--)
 if (i != 98)
-printf(", ");
-}
-printf("\n");
+printf("%i, ", i);
+else
+printf("%i\a", i);
 }
 }
