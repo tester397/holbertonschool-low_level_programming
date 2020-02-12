@@ -17,7 +17,7 @@ _putchar(a % 10 + '0');
 _putchar(':');
 _putchar(b / 10 + '0');
 _putchar(b % 10 + '0');
-j++;
+b++;
 _putchar('\n');
 }
 a++;
