@@ -1,31 +1,42 @@
 #include "holberton.h"
-#include <stdio.h>
+
 /**
-* print_to_98 - check the code for Holberton School students.
-* @n : variable
-* Return: Always 0.
-*/
-void print_to_98(int n)
+ *times_table - function that prints the 9 times table, starting with 0
+ */
+
+void times_table(void)
 {
-int i;
-if (n < 98)
+int a, b, j, first_digit, last_digit;
+
+for (a = 0 ; a <= 9 ; a++)
 {
-for (i = n; i <= 98; i++)
+for (b = 0 ; b <= 9 ; b++)
 {
-printf("%d", i);
-if (i != 98)
-printf(", ");
+j = a * b;
+if (b != 0)
+{
+_putchar(',');
+_putchar(' ');
 }
-printf("\n");
+if (j >= 10)
+{
+first_digit = j / 10;
+last_digit = j % 10;
+_putchar(first_digit + '0');
+_putchar(last_digit + '0');
+}
+else if (j < 10 && b != 0)
+{
+last_digit = j % 10;
+_putchar(' ');
+_putchar(last_digit + '0');
 }
 else
 {
-for (i = n; i >= 98; i--)
-{
-printf("%d", i);
-if (i != 98)
-printf(", ");
+last_digit = j % 10;
+_putchar(last_digit + '0');
 }
-printf("\n");
+}
+_putchar('\n');
 }
 }
