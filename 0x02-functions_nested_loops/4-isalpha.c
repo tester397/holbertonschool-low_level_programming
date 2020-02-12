@@ -2,14 +2,14 @@
 #include "holberton.h"
 /**
 * _isalpha - check the code for Holberton School students.
-* @c : variable
+* @b : variable
 * Return: Always 0.
 */
-int _isalpha(int c)
+int _isalpha(int b)
 {
-if ((c >= 'a') && (c <= 'z'))
+if ((b >= 'a') && (b <= 'z'))
 return (1);
-else if ((c >= 'A') && (c <= 'Z'))
+else if ((b >= 'A') && (b <= 'Z'))
 return (1);
 else
 return (0);
