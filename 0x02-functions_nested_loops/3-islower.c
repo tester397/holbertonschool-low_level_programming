@@ -1,12 +1,12 @@
 #include "holberton.h"
 /**
 * _islower - check the code for Holberton School students.
-* @c : variable
+* @b : variable
 * Return: Always 0.
 */
-int _islower(int c)
+int _islower(int b)
 {
-if ((c >= 'a') && (c <= 'z'))
+if ((b >= 'a') && (b <= 'z'))
 return (1);
 else
 return (0);
