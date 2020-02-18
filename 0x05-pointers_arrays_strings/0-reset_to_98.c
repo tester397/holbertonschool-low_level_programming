@@ -1,8 +1,8 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
-*comment here i am starting to work on pointers
-*@n:variable
-*always return (0)
+* main - check the code for Holberton School students.
+*
+* Return: Always 0.
 */
 void reset_to_98(int *n)
 {
